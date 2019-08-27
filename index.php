@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>김정웅 지원서</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  </head>
+  <body>
     <center>
         <h1 id='head'>dot.Net</h1>
     </center>
@@ -51,5 +51,26 @@
             </div>
         </div>
     </div>
-</body>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+       apiKey: "AIzaSyBdiMB9sk-Fj7H_H66GP95E2hjlwWISepE",
+        authDomain: "loginbasedwebapp.firebaseapp.com",
+        databaseURL: "https://loginbasedwebapp.firebaseio.com",
+        projectId: "loginbasedwebapp",
+        storageBucket: "",
+        messagingSenderId: "130207329293",
+        appId: "1:130207329293:web:fff850a73b41c627"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </body>
 </html>
