@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <center>
-        <h1 id='head'>dot.Net</h1>
-    </center>
+    <h1 id='head'>dot.Net</h1>
 
     <div id="content">
         <h2>인적 사항</h2>
@@ -51,26 +49,5 @@
             </div>
         </div>
     </div>
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#config-web-app -->
-
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-       apiKey: "AIzaSyBdiMB9sk-Fj7H_H66GP95E2hjlwWISepE",
-        authDomain: "loginbasedwebapp.firebaseapp.com",
-        databaseURL: "https://loginbasedwebapp.firebaseio.com",
-        projectId: "loginbasedwebapp",
-        storageBucket: "",
-        messagingSenderId: "130207329293",
-        appId: "1:130207329293:web:fff850a73b41c627"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
   </body>
 </html>
