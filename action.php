@@ -1,6 +1,8 @@
-<?php 
- $a = num1; 
- $b = num2; 
+<?php
 
- echo $a + $b;
- ?>
+$sum = 0;
+
+$sum = $_POST['num1'] + $_POST['num2'];
+
+echo $sum;
+?>
