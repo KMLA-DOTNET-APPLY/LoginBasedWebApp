@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Signout</title>
+    <script type="text/javascript">
+      function alr(){
+        if (confirm("탈퇴하시겠습니까?")) {
+            header('Location: ./signout.php');
+        }
+        else {
+            header('Location: ./index.html');
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+    <h1>탈퇴를 진행하시겠습니까?</h1>
+    <input type="button" id="button1" onclick="alr();" value="탈퇴"/>
+
+  </body>
+</html>
