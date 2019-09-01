@@ -6,18 +6,21 @@
     <script type="text/javascript">
       function alr(){
         if (confirm("탈퇴하시겠습니까?")) {
-            header('Location: ./signout.php');
+          window.location.href = './signout.php';
         }
         else {
-            header('Location: ./index.html');
+          window.location.href = './index.php';
         }
       }
     </script>
   </head>
-  <body>
+  <body onload="alr()">
 
-    <h1>탈퇴를 진행하시겠습니까?</h1>
-    <input type="button" id="button1" onclick="alr();" value="예"/>
-
+    <h1>탈퇴하기</h1>
+    <p>탈퇴를 진행하려면 아이디와 비밀번호를 입력해주세요</p>
+    <form method='POST' action="signout.php">
+      <input type="text" name='id'/>
+      <input type="text" name='pw'/>
+    </form>
   </body>
 </html>

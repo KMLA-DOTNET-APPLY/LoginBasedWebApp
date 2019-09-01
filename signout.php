@@ -4,7 +4,7 @@
     $pw=$_POST['pw'];
 
     $check="SELECT * FROM user_info WHERE id='$id'";
-    $result=$mysqli->query($check); 
+    $result=$mysqli->query($check);
 
     if($result->num_rows==1)
     {
