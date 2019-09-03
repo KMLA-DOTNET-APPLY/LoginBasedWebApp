@@ -18,6 +18,16 @@
         if($pw_input == $row['pw'] && $id_input == $row['id'])
         {
             query($delete);
+            header('Location: ./index.php');
+            exit();
         }
     }    
+    
 ?>
+<script type="text/javascript">
+    alert('탈퇴 실패');
+    <?php 
+        unset($_POST);
+    ?>
+    window.location = 'login.html';
+</script>
