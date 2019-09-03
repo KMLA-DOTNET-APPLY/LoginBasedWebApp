@@ -8,7 +8,6 @@
     $check="SELECT * FROM user_info WHERE id='$id'";
     $result=$mysqli->query($check); 
 
-    echo 1;
     $row=$result->fetch_array(MYSQLI_ASSOC);
         
     echo $row['id'];
@@ -25,7 +24,7 @@
         //    header('Location: ./index.php');
         //    exit();
         //}
-    }    
+    //}    
     
 ?>
 <script type="text/javascript">
