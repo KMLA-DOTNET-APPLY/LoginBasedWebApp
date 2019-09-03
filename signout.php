@@ -3,15 +3,16 @@
     $id_input=$_POST['id'];
     $pw_input=$_POST['pw'];
 
+    require('db.php');
+
+
     echo $id_input;
     echo "<br>";
     echo $pw_input;
     echo "<br>";
 
-    require('db.php');
 
     $check="SELECT * FROM user_info WHERE id='$id'";
-    $delete="DELETE * FROM user_info WHERE id='$id'";
     $result=$mysqli->query($check); 
 
     if($result->num_rows==1)
@@ -24,6 +25,8 @@
         echo "<br>";
         echo $row['pw'];
         echo "<br>";
+
+        $delete="DELETE * FROM user_info WHERE id='$id'";
 
          //비밀번호 확인하기
         //if($pw_input == $row['pw'] && $id_input == $row['id'])
