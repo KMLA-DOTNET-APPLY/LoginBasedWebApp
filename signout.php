@@ -16,6 +16,7 @@
 
     if($result->num_rows==1)
     {
+        echo 1;
          //id에 correspond하는 하나의 열을 배열로 가져오기
         $row=$result->fetch_array(MYSQLI_ASSOC);
         
