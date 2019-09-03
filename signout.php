@@ -5,28 +5,18 @@
 
     require('db.php');
 
-
-    echo $id_input;
-    echo "<br>";
-    echo $pw_input;
-    echo "<br>";
-
-
     $check="SELECT * FROM user_info WHERE id='$id'";
     $result=$mysqli->query($check); 
 
-    if($result->num_rows==1)
-    {
-        echo 1;
-         //id에 correspond하는 하나의 열을 배열로 가져오기
-        $row=$result->fetch_array(MYSQLI_ASSOC);
+    echo 1;
+    $row=$result->fetch_array(MYSQLI_ASSOC);
         
-        echo $row['id'];
-        echo "<br>";
-        echo $row['pw'];
-        echo "<br>";
+    echo $row['id'];
+    echo "<br>";
+    echo $row['pw'];
+    echo "<br>";
 
-        $delete="DELETE * FROM user_info WHERE id='$id'";
+    $delete="DELETE * FROM user_info WHERE id='$id'";
 
          //비밀번호 확인하기
         //if($pw_input == $row['pw'] && $id_input == $row['id'])
