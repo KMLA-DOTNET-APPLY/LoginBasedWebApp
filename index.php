@@ -13,7 +13,7 @@
 				if(!isset($_SESSION['id']) || !isset($_SESSION['name']))
 				{
 					echo "<meta http-equiv='refresh' content='0;url=login.html'>";
-					exit;
+					exit();
 				}
 				$id = $_SESSION['id'];
 				$name = $_SESSION['name'];
