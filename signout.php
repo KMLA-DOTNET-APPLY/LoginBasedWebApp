@@ -14,6 +14,7 @@
     echo "<br>";
     echo $row['pw'];
     echo "<br>";
+    echo $pw_input;
 
     $delete="DELETE * FROM user_info WHERE id='$id'";
 
