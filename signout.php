@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $id_input=$_POST['id'];
     $pw_input=$_POST['pw'];
 
