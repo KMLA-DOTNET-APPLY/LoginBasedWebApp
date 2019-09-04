@@ -4,12 +4,12 @@
 
     require('db.php');
 
-    $delete="DELETE * FROM user_info WHERE id='$id'";
+    $delete="DELETE * FROM user_info WHERE id=$id";
 
     if($pw_input == $_SESSION['pw'] && $id_input == $_SESSION['id'])
     {
         query($delete);
-        header('Location: ./index.php');
+        header('Location: ./signout_check.html');
         exit();
     }    
 ?>
