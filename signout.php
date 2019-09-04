@@ -5,10 +5,9 @@
 
     require('db.php');
 
-    $delete="DELETE * FROM user_info WHERE id='$id'";
+    $delete="DELETE * FROM user_info WHERE id='$id_input'";
 
     query($delete);
-       
 ?>
 <script type="text/javascript">
     alert('탈퇴 실패');
