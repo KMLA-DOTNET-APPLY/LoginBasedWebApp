@@ -5,7 +5,7 @@
 
     require('db.php');
 
-    $delete="DELETE * FROM user_info WHERE id='$id_input'";
+    $delete="DELETE * FROM user_info WHERE id=$id_input";
 
     $mysqli->query($delete);
 ?>
