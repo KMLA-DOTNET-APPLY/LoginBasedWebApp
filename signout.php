@@ -6,9 +6,9 @@
 
     require('db.php');
 
+    echo $id_input;
     $delete="DELETE FROM user_info WHERE id=$id_input";
-    $result = mysqli_query($delete, $mysqli);
-    echo $result;
+    mysqli_query($mysqli, $delete);
 ?>
 <script type="text/javascript">
     //alert('탈퇴 실패');
