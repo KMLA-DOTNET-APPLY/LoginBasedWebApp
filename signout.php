@@ -7,7 +7,7 @@
     require('db.php');
 
     $delete="DELETE FROM user_info WHERE id=$id_input";
-    $result = mysqli_query($delete, $mysqli);
+    $result = mysqli_query($mysqli, $delete);
     echo $result;
 ?>
 <script type="text/javascript">
