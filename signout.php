@@ -7,12 +7,13 @@
     require('db.php');
 
     $delete="DELETE FROM user_info WHERE id=$id_input";
-    mysqli_query($delete, $mysqli);
+    $result = mysqli_query($delete, $mysqli);
+    echo $result;
 ?>
 <script type="text/javascript">
-    alert('탈퇴 실패');
+    //alert('탈퇴 실패');
     <?php 
-        unset($_POST);
+        //unset($_POST);
     ?>
-    window.location = 'index.php';
+    //window.location = 'index.php';
 </script>
