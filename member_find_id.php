@@ -6,7 +6,7 @@
 
 	$username = $_POST['name'];
 
-    $sql = mq("select * from member where name = '{$username}' ");
+    $sql = mq("SELECT * FROM member user_info = '{$username}' ");
     $result = $sql->fetch_array();
 
     if($result["name"] == $username){
