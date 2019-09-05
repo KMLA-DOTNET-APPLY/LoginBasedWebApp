@@ -2,12 +2,12 @@
 <head>
     <meta charset="utf-8" />
 </head>
-<body onload="javascript:id.focus();">
+<body>
     <form method='POST' action='login_check.php'>
         <table>
             <tr>
                 <td>아이디</td>
-                <td><input type='text' name='id' tabindex='1'/></td>
+                <td><input type='text' name='id' tabindex='1' onload="javascript:focus()"/></td>
                 <td rowspan='2'><input type='submit' tabindex='3' value='로그인' style='height:50px'/></td>
             </tr>
             <tr>

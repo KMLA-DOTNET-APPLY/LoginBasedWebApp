@@ -14,7 +14,7 @@
       }
     </script>
   </head>
-  <body onload="javascript:id.focus();alr();">
+  <body onload="alr();">
 
     <h1>탈퇴하기</h1>
     <p>탈퇴를 진행하려면 아이디와 비밀번호를 입력해주세요</p>
@@ -22,7 +22,7 @@
         <table>
             <tr>
                 <td>아이디</td>
-                <td><input type='text' name='id' tabindex='1'/></td>
+                <td><input type='text' name='id' tabindex='1' onload="javascript:focus();"/></td>
                 <td rowspan='2'><input type='submit' tabindex='3' value='탈퇴하기' style='height:50px'/></td>
             </tr>
             <tr>
