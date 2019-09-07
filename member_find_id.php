@@ -19,7 +19,7 @@
     $row=$result->fetch_array(MYSQLI_ASSOC);
 
     if($_SESSION['name'] == $name_input){ //일치하는 이름이 있을 때
-	    echo "<script>alert('회원님의 ID는 "$row['id']" 입니다.'); history.back();</script>";
+        echo "<script>alert('회원님의 ID는 ".$result['id']." 입니다.'); history.back();</script>";
     }else{ //일치하는 이름이 없을 떄
     echo "<script>alert('없는 계정입니다.'); history.back();</script>";
     }
