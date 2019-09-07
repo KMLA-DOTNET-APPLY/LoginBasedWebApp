@@ -4,8 +4,6 @@
     $user_input=$_POST['user'];
     require('db.php');
 
-    include "../db.php";
-
     //입력하지 않은 경우
     if($user_input == "")
     {
@@ -20,7 +18,7 @@
         $result=$mysqli->query($check);
         $row=$result->fetch_array(MYSQLI_ASSOC);
 
-        if($row['id'] == $user_input)
+        if($row['user'] == $user_input)
         { //일치하는 이름이 있을 때
             echo "<script>alert('회원님의 ID는 ".$row['id']." 입니다.'); history.back();</script>";
         }
