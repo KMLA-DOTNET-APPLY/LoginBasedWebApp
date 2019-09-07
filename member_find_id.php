@@ -17,6 +17,8 @@
         $check="SELECT * FROM user_info WHERE user=$user_input";
         $result=$mysqli->query($check);
         $row=$result->fetch_array(MYSQLI_ASSOC);
+        echo $row['user'];
+        
 
         if($row['user'] == $user_input)
         { //일치하는 이름이 있을 때
