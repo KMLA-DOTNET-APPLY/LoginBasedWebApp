@@ -16,10 +16,10 @@
          //비밀번호 확인하기
         if($pw == $row['pw'])
         {
-            $name = $row['name'];
+            $user = $row['user'];
             //비밀번호 확인됐으면 세션 변수 만들기
             $_SESSION['id']=$id;
-            $_SESSION['name']=$name;
+            $_SESSION['user']=$user;
             $_SESSION['pw']=$pw;
             
             //세션 변수에 등록 잘 됐는지 확인

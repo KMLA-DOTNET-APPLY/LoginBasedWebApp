@@ -3,7 +3,7 @@
     require('db.php');
 
     $id = $_POST['id'];
-    $name = $_POST['name'];
+    $user = $_POST['user'];
     $pw = $_POST['pw'];
     
     $check="SELECT *from user_info WHERE userid='$id'";
@@ -15,7 +15,7 @@
         exit();
     }
 
-    $signup=mysqli_query($mysqli,"INSERT INTO user_info (id,name,pw) VALUES ('$id','$name','$pw')");
+    $signup=mysqli_query($mysqli,"INSERT INTO user_info (id,user,pw) VALUES ('$id','$user','$pw')");
     if($signup)
     {
         ?>

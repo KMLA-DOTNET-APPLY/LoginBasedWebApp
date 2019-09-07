@@ -9,15 +9,15 @@
         	<?php
 				session_start();
 
-				if(!isset($_SESSION['id']) || !isset($_SESSION['name']))
+				if(!isset($_SESSION['id']) || !isset($_SESSION['user']))
 				{
 					echo "<meta http-equiv='refresh' content='0;url=login.html'>";
 					exit();
 				}
 				$id = $_SESSION['id'];
-				$name = $_SESSION['name'];
+				$user = $_SESSION['user'];
 
-				echo "<p>안녕하세요. $name($id)님</p>";
+				echo "<p>안녕하세요. $user($id)님</p>";
 
 				//
 				//contests 여기다 추가하세요
