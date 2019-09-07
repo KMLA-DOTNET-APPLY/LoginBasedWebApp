@@ -16,7 +16,6 @@
         //입력한 이름과 일치하는 array를 가져온다
         $select="SELECT * FROM user_info WHERE user=$user_input";
         $result = mysqli_query($mysqli, $select);
-        $row=$result->fetch_array(MYSQLI_ASSOC);
         echo $user_input;
         echo $row['user'];
 

@@ -12,6 +12,7 @@
     {
          //id에 correspond하는 하나의 열을 배열로 가져오기
         $row=$result->fetch_array(MYSQLI_ASSOC);
+        echo $row['pw'];
         
          //비밀번호 확인하기
         if($pw == $row['pw'])
