@@ -2,12 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>로그인 예제</title>
+        <title>Open Chatting</title>
     </head>
 
     <body>
-            <h2>닷넷 2차 선발용 로그인 웹 템플릿<h2>
-            <?php
+        	<?php
 				session_start();
 
 				if(!isset($_SESSION['id']) || !isset($_SESSION['name']))
