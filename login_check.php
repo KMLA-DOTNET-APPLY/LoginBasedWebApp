@@ -21,13 +21,17 @@
             $_SESSION['id']=$id;
             $_SESSION['user']=$user;
             $_SESSION['pw']=$pw;
+
+            echo $id;
+            echo $pw;
+            echo $user;
             
             //세션 변수에 등록 잘 됐는지 확인
-            if(isset($_SESSION['id']) && isset($_SESSION['user']) && isset($_SESSION['pw'])) 
+            //if(isset($_SESSION['id']) && isset($_SESSION['user']) && isset($_SESSION['pw'])) 
             {
                 //로그인 성공 시 페이지 이동
-                header('Location: ./index.php');   
-                exit();
+                //header('Location: ./index.php');   
+                //exit();
             }
         }
     }
