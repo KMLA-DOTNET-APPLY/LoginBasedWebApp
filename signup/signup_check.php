@@ -16,7 +16,7 @@
 
     //입력된 id값으로 database에서 검색한다.
     $check="SELECT * from user_info WHERE id='$id'";
-    $result = mysqli_query($mysqli, $check);
+    $result = $mysqli->query($check);
 
     //동일한 id값이 존재하면 경고를 띄우고 페이지를 다시 로드한다.
     if($result->num_rows==1)
@@ -29,7 +29,7 @@
     {
         //데이터베이스에 값을 입력한다. 
         $insert = "INSERT INTO user_info (id,user,pw) VALUES ('$id','$user','$pw')";
-        $signup = mysqli_query($mysqli, $insert);
+        $signup = $mysqli->query($insert);
 
         //정상적으로 작동했을 경우
         if($signup)

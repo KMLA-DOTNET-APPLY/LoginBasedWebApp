@@ -15,7 +15,7 @@
         if($_SESSION['pw'] == $pw_input)
         {
             //데이터를 지운다
-            if(mysqli_query($mysqli, $delete))
+            if($mysqli->query($delete))
             {
                 //모든 세션 변수 지우기 = 로그인된 정보 모두 파괴
                 if(session_destroy()) 
