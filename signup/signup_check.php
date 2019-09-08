@@ -21,7 +21,7 @@
     //동일한 id값이 존재하면 경고를 띄우고 페이지를 다시 로드한다.
     if($result->num_rows==1)
     {
-        echo '<script> alert("중복된 아이디입니다"); history.back(); </script>';
+        echo '<script type="text/javascript"> alert("중복된 아이디입니다"); history.back(); </script>';
 
         exit();
     }
@@ -34,10 +34,7 @@
         //정상적으로 작동했을 경우
         if($signup)
         {
-            ?>
-            <script type="text/javascript">alert('회원가입이 완료되었습니다.');</script>
-            <?php
-            header('Location: ../index.php');
+            echo '<script type="text/javascript"> alert("회원가입이 완료되었습니다."); history.back();</script>';
         }
         else
             echo "<button onclick=\"location.href='../signup/signup.html'\"> 회원가입 실패, 돌아가기 </button>";
