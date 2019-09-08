@@ -7,12 +7,17 @@
     
     $check="SELECT * FROM user_info WHERE id='$id'";
     $result=$mysqli->query($check);
+    echo $check;
+    echo $result;
+    echo "<br>";
 
     if($result->num_rows==1)
     {
          //id에 correspond하는 하나의 열을 배열로 가져오기
         $row=$result->fetch_array(MYSQLI_ASSOC);
-        
+        echo $id;
+        echo $pw;
+        echo "<br>";
          //비밀번호 확인하기
         if($pw == $row['pw'])
         {
@@ -25,6 +30,7 @@
             echo $id;
             echo $pw;
             echo $user;
+            echo "<br>";
             
             //세션 변수에 등록 잘 됐는지 확인
             //if(isset($_SESSION['id']) && isset($_SESSION['user']) && isset($_SESSION['pw'])) 
