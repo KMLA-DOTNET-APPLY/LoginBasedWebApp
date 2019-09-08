@@ -5,7 +5,10 @@
     $id = $_POST['id'];
     $user = $_POST['user'];
     $pw = $_POST['pw'];
-    
+    if($id == "" || $user == "" || $pw == "")
+    {
+	    echo '<script> alert("항목을 입력하세요"); history.back(); </script>';
+    }
     $check="SELECT *from user_info WHERE id=$id";
     $result=$mysqli->query($check);
     if($result->num_rows==1)
