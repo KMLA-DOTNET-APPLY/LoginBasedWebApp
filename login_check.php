@@ -7,7 +7,6 @@
     
     $check="SELECT * FROM user_info WHERE id=$id";
     $result=$mysqli->query($check);
-    echo $result;
     echo "<br>";
 
     if($result->num_rows==1)
@@ -16,6 +15,9 @@
         $row=$result->fetch_array(MYSQLI_ASSOC);
         echo $id;
         echo $pw;
+        echo "<br>";
+        echo $row['id'];
+        echo $row['pw'];
         echo "<br>";
          //비밀번호 확인하기
         if($pw == $row['pw'])
