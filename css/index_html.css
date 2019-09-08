@@ -1,14 +1,22 @@
 .menu {
     background-color: brown;
     color: black;
+    width: 200px;
+    float: left;
 }
 .button {
     background-color: red;
-    border: 2px yellow;
+    border: 5px solid yellow;
     color: black;
-
+    height: 75px;
+    margin: auto;
 }
 .container {
     background-color: whitesmoke;
     color: black;
+}
+@media(max-width:600px){
+    .menu {
+        display: none;
+    }
 }
