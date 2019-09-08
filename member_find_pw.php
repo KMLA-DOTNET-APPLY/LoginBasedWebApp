@@ -22,7 +22,8 @@
         }
         else
         { //일치하는 아이디가 없을 떄
-            echo "<script>alert('없는 계정입니다.'); history.back();</script>";
+            header("Refresh:0");
+            echo "<script>alert('없는 계정입니다.');</script>";
         }
     }
     unset($_POST);
