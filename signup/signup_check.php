@@ -23,9 +23,6 @@
     {
         echo '<script> alert("중복된 아이디입니다"); history.back(); </script>';
 
-        //mysqli_result를 해제한다. (php 공식 문서에 나와있는 방법)
-        $result->close();
-
         exit();
     }
     else //동일한 id값이 존재하니 않는 경우
@@ -34,17 +31,13 @@
         $insert = "INSERT INTO user_info (id,user,pw) VALUES ('$id','$user','$pw')";
         $signup = mysqli_query($mysqli, $insert);
 
-        //더 이상 사용하지 않으므로 데이터베이스를 닫는다.
-        $mysqli->close();
-
         //정상적으로 작동했을 경우
         if($signup)
         {
             ?>
-            <meta charset="utf-8" />
             <script type="text/javascript">alert('회원가입이 완료되었습니다.');</script>
-            <meta http-equiv="refresh" content="0 url=/">
             <?php
+            header('Location: /index.php');
         }
         else
             echo "<button onclick=\"location.href='/signup/signup.html'\"> 회원가입 실패, 돌아가기 </button>";
