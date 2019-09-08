@@ -15,14 +15,16 @@
         if($_SESSION['pw'] == $pw_input)
         {
             //데이터를 지운다
-            mysqli_query($mysqli, $delete);
-            $res=session_destroy(); //모든 세션 변수 지우기 = 로그인된 정보 모두 파괴
-            if($res) 
+            if(mysqli_query($mysqli, $delete))
             {
-                header('Location: ./signout_check.html'); // 로그아웃 성공 시 로그인 페이지로 이동
+                //모든 세션 변수 지우기 = 로그인된 정보 모두 파괴
+                if(session_destroy()) 
+                {
+                    header('Location: ./index.html'); // 로그아웃 성공 시 로그인 페이지로 이동
+                }
+                unset($_POST);
+                exit();
             }
-            unset($_POST);
-            exit();
         }
     }
 ?>
