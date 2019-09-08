@@ -10,8 +10,6 @@
     }
     else
     {
-        echo $user_input;
-
         //입력하면, 이름이 일치 했을 때, 아이디를 보여준다
         //입력한 이름과 일치하는 array를 가져온다
         $select="SELECT * FROM user_info WHERE user=$user_input";
