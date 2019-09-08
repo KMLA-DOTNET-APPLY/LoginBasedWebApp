@@ -1,10 +1,14 @@
 .menu {
     background-color: brown;
+    color: black;
 }
 .button {
     background-color: red;
-    border: 2px;
+    border: 2px yellow;
+    color: black;
+
 }
 .container {
     background-color: whitesmoke;
+    color: black;
 }
