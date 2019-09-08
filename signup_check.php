@@ -10,15 +10,17 @@
 	    echo '<script> alert("항목을 입력하세요"); history.back(); </script>';
     }
     $check="SELECT * from user_info WHERE id=$id";
-    $result=$mysqli->query($check);
+    $result = mysqli_query($mysqli, $check);
     if($result->num_rows==1)
     {
         echo "중복된 아이디입니다.";
         echo "<button onclick=\"location.href='signup.html'\"> 돌아가기 </button>";
+        $result->close();
         exit();
     }
 
-    $signup=mysqli_query($mysqli,"INSERT INTO user_info (id,user,pw) VALUES ('$id','$user','$pw')");
+    $insert = "INSERT INTO user_info (id,user,pw) VALUES ('$id','$user','$pw')";
+    $signup = mysqli_query($mysqli, $insert);
     if($signup)
     {
         ?>
