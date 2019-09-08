@@ -1,11 +1,14 @@
 <?php
+    echo '1';
     //필요한 정보($mysqli)를 db.php에서 가져온다.
     require('~/db/db.php');
+    echo '2';
 
     //입력값을 받는다. 
     $id = $_POST['id'];
     $user = $_POST['user'];
     $pw = $_POST['pw'];
+    echo '3';
 
     //입력하지 않았으면 경고를 띄우고 페이지를 다시 로드한다.
     if($id == "" || $user == "" || $pw == "")
@@ -14,9 +17,11 @@
         exit();
     }
 
+    echo '4';
     //입력된 id값으로 database에서 검색한다.
     $check="SELECT * from user_info WHERE id='$id'";
     $result = mysqli_query($mysqli, $check);
+    echo '5';
 
     //동일한 id값이 존재하면 경고를 띄우고 페이지를 다시 로드한다.
     if($result->num_rows==1)
