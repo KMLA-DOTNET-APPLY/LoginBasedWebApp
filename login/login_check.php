@@ -27,7 +27,7 @@
             if(isset($_SESSION['id']) && isset($_SESSION['user']) && isset($_SESSION['pw'])) 
             {
                 //로그인 성공 시 페이지 이동
-                header('Location: /index.php');
+                header('Location: ./index.php');
                 exit();
             }
         }
