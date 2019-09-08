@@ -21,10 +21,6 @@
                 echo "<p><a href='logout.php'>로그아웃</a></p>";
                 echo "<p><a href='signout.html'>탈퇴하기</a></p>";
 			?>
-        	<a href="signup.html" target="right">
-				<button>회원가입 하러가기</button>
-			</a>
-			
     </body>
 
 </html> 
