@@ -34,7 +34,7 @@
         $insert = "INSERT INTO user_info (id,user,pw) VALUES ('$id','$user','$pw')";
         $signup = mysqli_query($mysqli, $insert);
 
-        //더 이상 사용하지 않으므로 데이버에이스를 닫는다.
+        //더 이상 사용하지 않으므로 데이터베이스를 닫는다.
         $mysqli->close();
         //정상적으로 작동했을 경우
         if($signup)
