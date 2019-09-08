@@ -9,8 +9,10 @@
     {
 	    echo '<script> alert("항목을 입력하세요"); history.back(); </script>';
     }
-    $check="SELECT *from user_info WHERE id=$id";
+    $check="SELECT * from user_info WHERE id=$id";
     $result=$mysqli->query($check);
+    echo $result;
+    /*
     if($result->num_rows==1)
     {
         echo "중복된 아이디입니다.";
@@ -29,4 +31,4 @@
     }
     else
         echo "<button onclick=\"location.href='signup.html'\"> 회원가입 실패, 돌아가기 </button>";
-?>
+?>*/
