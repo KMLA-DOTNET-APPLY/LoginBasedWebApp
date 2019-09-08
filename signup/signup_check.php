@@ -37,7 +37,7 @@
             ?>
             <script type="text/javascript">alert('회원가입이 완료되었습니다.');</script>
             <?php
-            header('Location: ./index.php');
+            header('Location: ~/index.php');
         }
         else
             echo "<button onclick=\"location.href='/signup/signup.html'\"> 회원가입 실패, 돌아가기 </button>";
