@@ -1,6 +1,6 @@
 <?php
     //필요한 정보($mysqli)를 db.php에서 가져온다.
-    require('/db/db.php');
+    require('~/db/db.php');
 
     //입력값을 받는다. 
     $id = $_POST['id'];
@@ -15,7 +15,7 @@
     }
 
     //입력된 id값으로 database에서 검색한다.
-    $check="SELECT * from user_info WHERE id=$id";
+    $check="SELECT * from user_info WHERE id='$id'";
     $result = mysqli_query($mysqli, $check);
 
     //동일한 id값이 존재하면 경고를 띄우고 페이지를 다시 로드한다.
