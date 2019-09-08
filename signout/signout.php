@@ -20,7 +20,8 @@
                 //모든 세션 변수 지우기 = 로그인된 정보 모두 파괴
                 if(session_destroy()) 
                 {
-                    header('Location: ../index.php'); // 로그아웃 성공 시 로그인 페이지로 이동
+                     // 로그아웃 성공 시 로그인 페이지로 이동
+                    echo '<script> alert("탈퇴가 완료되었습니다."); window.location = "../index.php"; </script>';
                 }
                 unset($_POST);
                 exit();
