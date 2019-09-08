@@ -1,9 +1,10 @@
 .menu {
-    color: brown;
+    background-color: brown;
 }
 .button {
+    background-color: red;
     border: 2px;
 }
 .container {
-    color: whitesmoke;
+    background-color: whitesmoke;
 }
