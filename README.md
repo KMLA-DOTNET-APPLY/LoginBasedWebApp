@@ -8,5 +8,5 @@ Login based WebApp
 4. 알림은 javascript의 alert를 사용한다. 
 5. 페이지 이동시에는 javascript의 windows.onload를 사용한다. 
 6. 입력을 할 때에는 input을 사용하며, button같은 것들도 다 input을 사용한다. 
-7. php와 html을 혼용하지 않는다. 
+7. 되도록 php와 html을 혼용하지 않는다. 
 8. style을 일괄적으로 관리하기 위해 css파일 폴더를 따로 만들어 사용한다. 
