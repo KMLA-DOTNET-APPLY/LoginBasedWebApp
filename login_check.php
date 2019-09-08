@@ -5,9 +5,8 @@
 
     require('db.php');
     
-    $check="SELECT * FROM user_info WHERE id='$id'";
+    $check="SELECT * FROM user_info WHERE id=$id";
     $result=$mysqli->query($check);
-    echo $check;
     echo $result;
     echo "<br>";
 
