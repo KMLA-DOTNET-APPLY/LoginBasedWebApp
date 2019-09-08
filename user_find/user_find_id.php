@@ -1,5 +1,7 @@
 <?php
     echo '<script> alert("서비스 준비중입니다"); history.back(); </script>';
+
+    //id 이외에는 사용자를 특정할 수 있는 방법이 없으므로 일단 id를 찾는 작업을 중지한다. 
     /*
     $user_input=$_POST['user'];
 

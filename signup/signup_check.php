@@ -1,6 +1,6 @@
 <?php
     //필요한 정보($mysqli)를 db.php에서 가져온다.
-    require('db.php');
+    require('/db/db.php');
 
     //입력값을 받는다. 
     $id = $_POST['id'];
@@ -47,7 +47,7 @@
             <?php
         }
         else
-            echo "<button onclick=\"location.href='signup.html'\"> 회원가입 실패, 돌아가기 </button>";
+            echo "<button onclick=\"location.href='/signup/signup.html'\"> 회원가입 실패, 돌아가기 </button>";
     }
     unset($_POST);
 ?>
