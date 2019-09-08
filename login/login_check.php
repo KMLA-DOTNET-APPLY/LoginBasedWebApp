@@ -7,6 +7,10 @@
     
     $check="SELECT * FROM user_info WHERE id=$id";
     $result=$mysqli->query($check);
+    if($id == "" || $pw == "")
+    {
+        echo '<script> alert("항목을 입력하세요"); history.back(); </script>';
+    }
 
     if($result->num_rows==1)
     {
