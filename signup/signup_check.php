@@ -37,7 +37,7 @@
             echo '<script> alert("회원가입이 완료되었습니다."); window.location = "../index.php"; </script>';
         }
         else
-            echo "<button onclick=\"location.href='../signup/signup.html'\"> 회원가입 실패, 돌아가기 </button>";
+            echo '<script> alert("회원가입 실패, 돌아가기"); window.location = "../signup/signup.html"; </script>';
     }
     unset($_POST);
 ?>
