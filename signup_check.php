@@ -36,7 +36,7 @@
 
         //더 이상 사용하지 않으므로 데이터베이스를 닫는다.
         $mysqli->close();
-        
+
         //정상적으로 작동했을 경우
         if($signup)
         {
@@ -49,4 +49,5 @@
         else
             echo "<button onclick=\"location.href='signup.html'\"> 회원가입 실패, 돌아가기 </button>";
     }
+    unset($_POST);
 ?>

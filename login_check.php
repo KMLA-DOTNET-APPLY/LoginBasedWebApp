@@ -32,6 +32,7 @@
             }
         }
     }
+    unset($_POST);
 ?>
 <script type="text/javascript">
     alert('로그인 실패');

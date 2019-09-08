@@ -25,4 +25,5 @@
             echo "<script>alert('없는 계정입니다.'); history.back();</script>";
         }
     }
+    unset($_POST);
 ?>

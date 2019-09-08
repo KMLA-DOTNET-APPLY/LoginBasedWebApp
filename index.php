@@ -18,11 +18,6 @@
 				$user = $_SESSION['user'];
 
 				echo "<p>안녕하세요. $user($id)님</p>";
-
-				//
-				//contests 여기다 추가하세요
-				//
-
                 echo "<p><a href='logout.php'>로그아웃</a></p>";
                 echo "<p><a href='signout.html'>탈퇴하기</a></p>";
 			?>
