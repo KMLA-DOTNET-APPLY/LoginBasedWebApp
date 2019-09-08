@@ -1,7 +1,7 @@
 <?php
     echo '1';
     //필요한 정보($mysqli)를 db.php에서 가져온다.
-    require('~/db/db.php');
+    require('./db/db.php');
     echo '2';
 
     //입력값을 받는다. 
