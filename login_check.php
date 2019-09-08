@@ -37,9 +37,9 @@
     }
 ?>
 <script type="text/javascript">
-    alert('로그인 실패');
+    //alert('로그인 실패');
     <?php 
-        unset($_POST);
+        //unset($_POST);
     ?>
-    window.location = 'login.html';
+    //window.location = 'login.html';
 </script>
