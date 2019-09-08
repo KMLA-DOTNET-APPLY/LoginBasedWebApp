@@ -18,6 +18,7 @@
         echo "<br>";
         echo $row['id'];
         echo $row['pw'];
+        echo $row['user'];
         echo "<br>";
          //비밀번호 확인하기
         if($pw == $row['pw'])
