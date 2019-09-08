@@ -1,4 +1,6 @@
 <?php
+    echo '<script> alert("서비스 준비중입니다"); history.back(); </script>';
+    /*
     $user_input=$_POST['user'];
 
     require('db.php');
@@ -25,5 +27,5 @@
         { //일치하는 이름이 없을 떄
             echo "<script>alert('없는 계정입니다.'); history.back();</script>";
         }
-    }
+    }*/
 ?>
