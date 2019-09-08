@@ -11,8 +11,7 @@
     if($result->num_rows==1)
     {
          //id에 correspond하는 하나의 열을 배열로 가져오기
-        //$row=$result->fetch_array(MYSQLI_ASSOC);
-        $row = $result->fetch_row();
+        $row=$result->fetch_array(MYSQLI_ASSOC);
         
          //비밀번호 확인하기
         if($pw == $row['pw'])

@@ -14,9 +14,8 @@
         //입력한 아이디과 일치하는 array를 가져온다
         $select="SELECT * FROM user_info WHERE id=$id_input";
         $result=$mysqli->query($select);
-        
-        $row = $result->fetch_row();
-    
+        $row=$result->fetch_array(MYSQLI_ASSOC);    
+
         if($row['id'] == $id_input)
         { //일치하는 아이디가 있을 때
             echo "<script>alert('회원님의 비밀번호는 ".$row['pw']." 입니다.'); history.back();</script>";
