@@ -22,5 +22,4 @@
                 echo "<p><a href='signout.html'>탈퇴하기</a></p>";
 			?>
     </body>
-
 </html> 
