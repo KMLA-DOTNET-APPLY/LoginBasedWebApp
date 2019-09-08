@@ -4,7 +4,7 @@
     $id_input=$_POST['id'];
     $pw_input=$_POST['pw'];
 
-    require('db.php');
+    require('../db/db.php');
 
     //delete 명령어 만들기
     $delete="DELETE FROM user_info WHERE id=$id_input";
@@ -20,7 +20,7 @@
                 //모든 세션 변수 지우기 = 로그인된 정보 모두 파괴
                 if(session_destroy()) 
                 {
-                    header('Location: ./index.html'); // 로그아웃 성공 시 로그인 페이지로 이동
+                    header('Location: ../index.html'); // 로그아웃 성공 시 로그인 페이지로 이동
                 }
                 unset($_POST);
                 exit();
@@ -33,5 +33,5 @@
     <?php 
         unset($_POST);
     ?>
-    window.location = '~/index.php';
+    window.location = '../index.php';
 </script>

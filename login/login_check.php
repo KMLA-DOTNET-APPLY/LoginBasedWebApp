@@ -3,7 +3,7 @@
     $id=$_POST['id'];
     $pw=$_POST['pw'];
 
-    require('/db/db.php');
+    require('../db/db.php');
     
     $check="SELECT * FROM user_info WHERE id=$id";
     $result=$mysqli->query($check);
@@ -27,7 +27,7 @@
             if(isset($_SESSION['id']) && isset($_SESSION['user']) && isset($_SESSION['pw'])) 
             {
                 //로그인 성공 시 페이지 이동
-                header('Location: ~/index.php');
+                header('Location: ../index.php');
                 exit();
             }
         }
@@ -39,5 +39,5 @@
     <?php 
         unset($_POST);
     ?>
-    window.location = '/login/login.html';
+    window.location = './login.html';
 </script>

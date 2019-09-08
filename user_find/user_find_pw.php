@@ -3,7 +3,7 @@
     //아무 아이디나 넣어도 기능하니까 보안이 취약하다는 것이 단점이다. 이를 위해 암호화하는 작업이 필요하다. 
     $id_input=$_POST['id'];
 
-    require('/db/db.php');
+    require('../db/db.php');
 
     //입력하지 않은 경우
     if($id_input == "")
