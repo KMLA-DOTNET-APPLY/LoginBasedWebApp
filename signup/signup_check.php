@@ -34,7 +34,7 @@
         //정상적으로 작동했을 경우
         if($signup)
         {
-            echo '<script> alert("회원가입이 완료되었습니다."); history.back(); </script>';
+            echo '<script> alert("회원가입이 완료되었습니다."); window.location = "../index.php"; </script>';
         }
         else
             echo "<button onclick=\"location.href='../signup/signup.html'\"> 회원가입 실패, 돌아가기 </button>";
