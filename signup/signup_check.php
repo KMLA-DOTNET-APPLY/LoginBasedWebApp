@@ -34,6 +34,7 @@
         //정상적으로 작동했을 경우
         if($signup)
         {
+            //성공하면 index.php로, 실패하면 다시 회원가입 페이지로 돌아간다. 
             echo '<script> alert("회원가입이 완료되었습니다."); window.location = "../index.php"; </script>';
         }
         else
