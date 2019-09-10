@@ -10,3 +10,4 @@ Login based WebApp
 6. 입력을 할 때에는 input을 사용하며, button같은 것들도 다 input을 사용한다. 
 7. 되도록 php와 html을 혼용하지 않는다. 
 8. style을 일괄적으로 관리하기 위해 css파일 폴더를 따로 만들어 사용한다. 
+9. 모든 html은 main.css라는 style을 가지고, 부가적인 부분은 각 html에 대응하는 css를 가진다. 
