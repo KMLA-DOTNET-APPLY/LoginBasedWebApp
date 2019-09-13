@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html lang="ko">
-    <head>
-        <meta charset="utf-8">
-        <title>Open Chatting</title>
-    </head>
+<?php
+    session_start();
 
-    <body>
-        <?php
-            session_start();
+    if(!isset($_SESSION['id']) || !isset($_SESSION['user']))
+    {
+        header('Location: ./login/login.html');
+        exit();
+    }
+    $id = $_SESSION['id'];
+    $user = $_SESSION['user'];
 
-            if(!isset($_SESSION['id']) || !isset($_SESSION['user']))
-            {
-                header('Location: ./login/login.html');
-                exit();
-            }
-            $id = $_SESSION['id'];
-            $user = $_SESSION['user'];
-
-            header('Location: ./index.html');
-        ?>
-    </body>
-</html> 
+    header('Location: ./index.html');
+?>
