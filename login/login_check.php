@@ -10,7 +10,8 @@
 
     $check="SELECT * FROM user_info WHERE id=$id";
     $result=$mysqli->query($check);
-    if($id == "" || $pw == "")
+
+    if(empty($id) || empty($id))
     {
         echo '<script> alert("항목을 입력하세요"); history.back(); </script>';
     }
@@ -40,9 +41,9 @@
                 header('Location: ../index.php');
                 exit();
             }
-        }
+        }*/
     }
-    unset($_POST);*/
+    unset($_POST);
 ?>
 <script type="text/javascript">
     //alert('로그인 실패');
