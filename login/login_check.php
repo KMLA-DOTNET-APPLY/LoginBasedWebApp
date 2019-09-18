@@ -1,21 +1,23 @@
 <?php
     session_start();
-    $id=$_POST['id'];
-    $pw=$_POST['pw'];
-
-    echo 1;
-
-    require('../db/db.php');
-    echo 2;
-
-    $check="SELECT * FROM user_info WHERE id=$id";
-    $result=$mysqli->query($check);
-
-    if(empty($id) || empty($id))
+    if(empty($_POST['id']) || empty($_POST['pw']))
     {
         echo '<script> alert("항목을 입력하세요"); history.back(); </script>';
     }
-    echo 3;
+
+    $id=$_POST['id'];
+    $pw=$_POST['pw'];
+
+    echo $id;
+    echo $pw;
+
+
+    require('../db/db.php');
+
+    echo 2;
+    $check="SELECT * FROM user_info WHERE id=$id";
+    $result=$mysqli->query($check);
+
 
     echo $result->fetch_all();
 
