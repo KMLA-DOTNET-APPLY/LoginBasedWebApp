@@ -6,7 +6,7 @@
 
     require('../db/db.php');
     echo 2;
-    
+
     $check="SELECT * FROM user_info WHERE id=$id";
     $result=$mysqli->query($check);
     if($id == "" || $pw == "")
@@ -30,9 +30,9 @@
             $_SESSION['user']=$user;
             $_SESSION['pw']=$pw;
 
-            
+
             /*//세션 변수에 등록 잘 됐는지 확인
-            if(isset($_SESSION['id']) && isset($_SESSION['user']) && isset($_SESSION['pw'])) 
+            if(isset($_SESSION['id']) && isset($_SESSION['user']) && isset($_SESSION['pw']))
             {
                 //로그인 성공 시 페이지 이동
                 header('Location: ../index.php');
@@ -44,7 +44,7 @@
 ?>
 <script type="text/javascript">
     //alert('로그인 실패');
-    <?php 
+    <?php
         //unset($_POST);
     ?>
     //window.location = './login.html';
