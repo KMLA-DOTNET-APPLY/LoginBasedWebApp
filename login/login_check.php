@@ -2,6 +2,7 @@
     session_start();
     $id=$_POST['id'];
     $pw=$_POST['pw'];
+
     echo 1;
 
     require('../db/db.php');
@@ -15,7 +16,7 @@
     }
     echo 3;
 
-    if($result->num_rows==1)
+    /*if($result->num_rows==1)
     {
          //id에 correspond하는 하나의 열을 배열로 가져오기
         $row=$result->fetch_array(MYSQLI_ASSOC);
@@ -31,7 +32,7 @@
             $_SESSION['pw']=$pw;
 
 
-            /*//세션 변수에 등록 잘 됐는지 확인
+            //세션 변수에 등록 잘 됐는지 확인
             if(isset($_SESSION['id']) && isset($_SESSION['user']) && isset($_SESSION['pw']))
             {
                 //로그인 성공 시 페이지 이동
