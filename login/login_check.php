@@ -17,14 +17,16 @@
     }
     echo 3;
 
-    if($result->num_rows==1)
+    echo $result->fetch_all();
+
+    /*if($result->num_rows==1)
     {
         echo 4;
         //id에 correspond하는 하나의 열을 배열로 가져오기
-        $row=$result->fetch_array(MYSQLI_ASSOC);
+        
         echo 5;
          //비밀번호 확인하기
-        /*if($pw == $row['pw'])
+        if($pw == $row['pw'])
         {
             echo 5;
             $user = $row['user'];
@@ -41,14 +43,14 @@
                 header('Location: ../index.php');
                 exit();
             }
-        }*/
-    }
+        }
+    }*/
     unset($_POST);
 ?>
 <script type="text/javascript">
-    alert('로그인 실패');
+    //alert('로그인 실패');
     <?php
-        unset($_POST);
+        //unset($_POST);
     ?>
-    window.location = './login.html';
+    //window.location = './login.html';
 </script>
