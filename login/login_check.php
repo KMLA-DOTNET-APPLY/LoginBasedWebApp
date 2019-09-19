@@ -19,7 +19,8 @@
     $result=$mysqli->query($check);
 
 
-    echo $result->fetch_all();
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    echo 3;
 
     /*if($result->num_rows==1)
     {
