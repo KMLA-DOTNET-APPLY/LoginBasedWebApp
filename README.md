@@ -11,3 +11,4 @@ Login based WebApp
 7. 되도록 php와 html을 혼용하지 않는다. 
 8. style을 일괄적으로 관리하기 위해 css파일 폴더를 따로 만들어 사용한다. 
 9. 모든 html은 main.css라는 style을 가지고, 부가적인 부분은 각 html에 대응하는 css를 가진다. 
+10. 데이터베이스에 맞는 형식으로 query 한다. 

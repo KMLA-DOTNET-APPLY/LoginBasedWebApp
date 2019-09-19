@@ -7,7 +7,7 @@
     require('../db/db.php');
 
     //delete 명령어 만들기
-    $delete="DELETE FROM user_info WHERE id=$id_input";
+    $delete="DELETE FROM user_info WHERE id='$id_input'";
 
     //session의 id값과 pw값이 입력한 값과 같으면 탈퇴를 진행한다.
     if($_SESSION['id'] == $id_input)

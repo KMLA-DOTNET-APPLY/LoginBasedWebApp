@@ -15,7 +15,7 @@
 
     //입력하면, 아이디가 일치 했을 때
     //입력한 아이디과 일치하는 array를 가져온다
-    $select="SELECT * FROM user_info WHERE id=$id_input";
+    $select="SELECT * FROM user_info WHERE id='$id_input'";
     $result=$mysqli->query($select);
     $row=$result->fetch_array(MYSQLI_ASSOC);
 
