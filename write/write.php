@@ -4,6 +4,9 @@
         echo '<script> alert("항목을 입력하세요"); history.back(); </script>';
         exit();
     }
+    //필요한 정보($mysqli)를 db.php에서 가져온다.
+    require('../db/db.php');
+    
     session_start();
 
     $author = $_SESSION['user'];
