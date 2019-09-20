@@ -8,9 +8,9 @@
     
     foreach ($rows as $row) 
     {
-        echo "<h2>작성자 $row[0]<h2> <br>";
-        echo "<h1>제목 $row[1]<h1> <br>";
-        echo "<h2>내용 $row[2]<h2> <br>";
+        echo "<h2>$row[0]<h2><br>";
+        echo "<h1>$row[1]<h1><br>";
+        echo "<h2>내용 $row[2]<h2><br>";
         echo data("Y년 m월 d일 h:i:sa", $row[3]);
         echo "Likes"."$row[4]";
     }
