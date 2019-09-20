@@ -2,12 +2,16 @@
     require('../db/db.php');
 
     $select = "SELECT * FROM newsfeed_data ORDER BY id DESC";
-    $result = $mysqli->query($select);
-
-    foreach (mysqli_fetch_lengths($result) as $i => $val) {
-        printf("Field %2d has Length %2d\n", $i+1, $val);
+    if($result = $mysqli->query($select)) 
+    {
+        foreach (mysqli_fetch_lengths($result) as $i => $val) {
+            printf("Field %2d has Length %2d\n", $i+1, $val);
+        }
     }
-
+    else 
+    {
+        echo 1;
+    }
     /*newsfeed_data에 포함된 모든 글을 가져온다.
     화면에 각각의 글들을 가지고 와서 표시를 한다.
     
