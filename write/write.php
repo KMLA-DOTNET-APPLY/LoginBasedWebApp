@@ -6,7 +6,7 @@
     }
     //필요한 정보($mysqli)를 db.php에서 가져온다.
     require('../db/db.php');
-    
+
     session_start();
 
     $author = $_SESSION['user'];
@@ -14,7 +14,7 @@
     $content = $_POST['content'];
     $created_at = time();
     $id = (string)$created_at.$author;
-    $insert = "INSERT INTO newsfeed_data (author, title, content, created_at, like_num, id) VALUES ($author, $title, $content, $created_at, 0, $id)";
+    $insert = "INSERT INTO newsfeed_data (author, title, content, created_at, like_num, id) VALUES ('$author', '$title', '$content', $created_at, 0, '$id')";
     if($mysqli->query($insert))
     {
         echo '<script> alert("글을 작성하였습니다."); window.location = "../index.php"; </script>';
