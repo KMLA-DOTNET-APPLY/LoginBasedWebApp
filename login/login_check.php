@@ -12,10 +12,8 @@
     $check="SELECT * FROM user_info WHERE id='$id'";
     $result=$mysqli->query($check);
 
-    echo 3;
 
     $row = $result->fetch_array(MYSQLI_ASSOC);
-    echo 4;
 
     if($result->num_rows==1)
     {
