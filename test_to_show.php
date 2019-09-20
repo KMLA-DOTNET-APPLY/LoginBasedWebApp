@@ -6,7 +6,7 @@
 
     while($row = mysql_fetch_array($result)) 
     {
-        echo print_r($row);       // Print the entire row data
+        print_r($row);       // Print the entire row data
     }
 
     /*newsfeed_data에 포함된 모든 글을 가져온다.
