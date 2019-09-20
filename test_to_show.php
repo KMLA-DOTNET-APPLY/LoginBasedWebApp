@@ -4,10 +4,7 @@
     $select = "SELECT * FROM newsfeed_data ORDER BY id DESC";
     $result = $mysqli->query($select);
 
-    while($row = mysql_fetch_array($result)) 
-    {
-        echo print_r($row);       // Print the entire row data
-    }
+    echo gettype($result);
 
     /*newsfeed_data에 포함된 모든 글을 가져온다.
     화면에 각각의 글들을 가지고 와서 표시를 한다.
