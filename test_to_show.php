@@ -2,13 +2,12 @@
     require('../db/db.php');
 
     $select = "SELECT * FROM newsfeed_data ORDER BY id DESC";
-    $mysqli->query($select);
+    $result = $mysqli->query($select);
 
-    $count = "SELECT COUNT(*) as cnt FROM newsfeed_data";
-    $result = $mysqli->query($count);
-
-    $data = $result->fetch_all();
-    print_r($data);
+    while($row = mysql_fetch_array($result)) 
+    {
+        echo print_r($row);       // Print the entire row data
+    }
 
     /*newsfeed_data에 포함된 모든 글을 가져온다.
     화면에 각각의 글들을 가지고 와서 표시를 한다.
