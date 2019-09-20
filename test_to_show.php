@@ -2,6 +2,7 @@
     require('../db/db.php');
 
     $select = "SELECT * FROM newsfeed_data ORDER BY id DESC";
+    echo 1;
     $result = $mysqli->query($select);
     echo 2;
     
