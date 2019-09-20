@@ -6,7 +6,12 @@
         exit();
     }
 
-    $insert = "INSERT INTO newsfeed_data (author, title, content, created_at, like_num, id) VALUES ('$id','$user','$pw')";
+    $author = session;
+    $title;
+    $content;
+    $created_at = time();
+    $id =
+    $insert = "INSERT INTO newsfeed_data (author, title, content, created_at, like_num, id) VALUES ()";
 ?>
 
 --포스트로 받은 값을 받아서

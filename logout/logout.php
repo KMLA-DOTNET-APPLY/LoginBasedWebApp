@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    session_unset(); 
     $res=session_destroy(); //모든 세션 변수 지우기 = 로그인된 정보 모두 파괴
     
     if($res)

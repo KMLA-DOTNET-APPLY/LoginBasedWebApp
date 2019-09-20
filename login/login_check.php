@@ -3,7 +3,6 @@
     {
         echo '<script> alert("항목을 입력하세요"); history.back(); </script>';
     }
-    session_start();
     $id=$_POST['id'];
     $pw=$_POST['pw'];
 
