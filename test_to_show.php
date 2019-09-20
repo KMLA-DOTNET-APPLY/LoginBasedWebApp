@@ -1,5 +1,5 @@
 <?php
-    require('./db.php');
+    require('./db/db.php');
 
     $select = "SELECT * FROM newsfeed_data ORDER BY id DESC";
     echo 1;
