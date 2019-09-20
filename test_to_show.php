@@ -4,9 +4,9 @@
     $select = "SELECT * FROM newsfeed_data ORDER BY id DESC";
     $result = $mysqli->query($select);
 
-    while($row = mysql_fetch_array($result)) 
-    {
-        print_r($row);       // Print the entire row data
+    echo gettype($result);
+    foreach (mysqli_fetch_lengths($result) as $i => $val) {
+        printf("Field %2d has Length %2d\n", $i+1, $val);
     }
 
     /*newsfeed_data에 포함된 모든 글을 가져온다.
