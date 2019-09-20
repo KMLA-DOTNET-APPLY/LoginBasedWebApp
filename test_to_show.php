@@ -4,7 +4,6 @@
     $select = "SELECT * FROM newsfeed_data ORDER BY id DESC";
     $result = $mysqli->query($select);
 
-    echo gettype($result);
     foreach (mysqli_fetch_lengths($result) as $i => $val) {
         printf("Field %2d has Length %2d\n", $i+1, $val);
     }
