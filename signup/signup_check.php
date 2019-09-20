@@ -2,7 +2,7 @@
     
     
     //입력하지 않았으면 경고를 띄우고 페이지를 다시 로드한다.
-    if(empty($id) || empty($user) || empty($pw))
+    if(empty($_POST['id']) || empty($_POST['user']) || empty($_POST['pw']))
     {
         echo '<script> alert("항목을 입력하세요"); history.back(); </script>';
         exit();
