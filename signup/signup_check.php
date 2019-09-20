@@ -39,7 +39,7 @@
             echo '<script> alert("회원가입이 완료되었습니다."); window.location = "../index.php"; </script>';
         }
         else
-            echo '<script> alert("회원가입 실패, 돌아가기"); window.location = "../signup/signup.html"; </script>';
+            echo '<script> alert("회원가을 실패하였습니다."); window.location = "../signup/signup.html"; </script>';
     }
     unset($_POST);
 ?>
