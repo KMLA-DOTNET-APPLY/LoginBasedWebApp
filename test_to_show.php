@@ -6,8 +6,12 @@
 
     $rows = $result->fetch_all(MYSQLI_NUM);
     
-    foreach ($rows as $row) 
+    foreach ($rows as $row)
     {
+        foreach ($row as $content)
+        {
+            echo "$content <br>";
+        }
         echo "$row[0] <br>";
         echo "$row[1] <br>";
         echo "$row[2] <br>";
