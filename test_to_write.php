@@ -1,13 +1,13 @@
 <?php
-    require('../db/db.php');
+    echo time();
+    /*require('../db/db.php');
 
     $check="SELECT * FROM newsfeed_data ";
     "SELECT COUNT(*) as cnt FROM newsfeed_data"
-?>
-newsfeed_data에 포함된 모든 글을 가져온다.
+    newsfeed_data에 포함된 모든 글을 가져온다.
 화면에 각각의 글들을 가지고 와서 표시를 한다.
 
-제목, 글쓴이, 글 쓴 시간, 내용, 좋아요, 댓글
+제목, 글쓴이, 글 쓴 시간, 내용, 좋아요, id에 맞는 댓글
 글쓴이는 사용자의 링크를 걸어야 한다.
 링크를 클릭하면 프로필이 나와야 하는데, 이때는 사용자의 아이디로 데이터베이스에서 정보를 가지고 온다.
 
@@ -19,3 +19,5 @@ newsfeed_data에 포함된 모든 글을 가져온다.
 추가하고 싶은 기능
 좋아요 개수에 따라 정렬
 글쓴이 또는 제목에 따른 검색
+*/
+?>
