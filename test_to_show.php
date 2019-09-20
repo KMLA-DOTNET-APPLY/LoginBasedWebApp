@@ -2,11 +2,9 @@
     require('../db/db.php');
 
     $select = "SELECT * FROM newsfeed_data ORDER BY id DESC";
-    if($result = $mysqli->query($select)) 
+    if($result = $mysqli->query($select))
     {
-        foreach (mysqli_fetch_lengths($result) as $i => $val) {
-            printf("Field %2d has Length %2d\n", $i+1, $val);
-        }
+        echo 2;
     }
     else 
     {
