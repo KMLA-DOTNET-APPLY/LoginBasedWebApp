@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8"/>
         <title>Find ID/Password</title>
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
         <h1>아이디/비밀번호 찾기</h1>
-        <input type="button" onclick="location.href='../index.php'" value="로그인 화면으로">
+        <input type="button" onclick="location.href='/index.php'" value="로그인 화면으로">
         <div class="find">
-            <form method="POST" action="user_find_id.php">
+            <form method="POST" action="/user_find/user_find_id.php">
                 <fieldset>
                     <legend>아이디 찾기</legend>
                     <table>
@@ -24,7 +24,7 @@
         </div>
 
         <div class="find">
-            <form method="post" action="user_find_pw.php">
+            <form method="post" action="/user_find/user_find_pw.php">
                 <fieldset>
                     <legend>비밀번호 찾기</legend>                
                     <table>

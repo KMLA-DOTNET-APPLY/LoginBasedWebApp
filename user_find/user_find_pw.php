@@ -10,7 +10,7 @@
 
     $id_input=$_POST['id'];
 
-    require('../db/db.php');
+    require('/db/db.php');
 
 
     //입력하면, 아이디가 일치 했을 때

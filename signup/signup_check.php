@@ -1,6 +1,4 @@
 <?php
-    
-    
     //입력하지 않았으면 경고를 띄우고 페이지를 다시 로드한다.
     if(empty($_POST['id']) || empty($_POST['user']) || empty($_POST['pw']))
     {
@@ -13,7 +11,7 @@
     $pw = $_POST['pw'];
 
     //필요한 정보($mysqli)를 db.php에서 가져온다.
-    require('../db/db.php');
+    require('/db/db.php');
 
     //입력된 id값으로 database에서 검색한다.
     $check="SELECT * from user_info WHERE id='$id'";
@@ -36,10 +34,10 @@
         if($signup)
         {
             //성공하면 index.php로, 실패하면 다시 회원가입 페이지로 돌아간다. 
-            echo '<script> alert("회원가입이 완료되었습니다."); window.location = "../index.php"; </script>';
+            echo '<script> alert("회원가입이 완료되었습니다."); window.location = "/index.php"; </script>';
         }
         else
-            echo '<script> alert("회원가을 실패하였습니다."); window.location = "../signup/signup.html"; </script>';
+            echo '<script> alert("회원가을 실패하였습니다."); window.location = "/signup/signup.html"; </script>';
     }
     unset($_POST);
 ?>

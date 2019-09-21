@@ -4,7 +4,7 @@
     $id_input=$_POST['id'];
     $pw_input=$_POST['pw'];
 
-    require('../db/db.php');
+    require('/db/db.php');
 
     //delete 명령어 만들기
     $delete="DELETE FROM user_info WHERE id='$id_input'";
@@ -19,7 +19,7 @@
             {
                 unset($_POST);
                 //로그아웃하기 -> 모든 세션 변수 지우기 = 로그인된 정보 모두 파괴
-                require("../logout/logout.php");
+                require("/logout/logout.php");
                 exit();
             }
         }
@@ -30,5 +30,5 @@
     <?php 
         unset($_POST);
     ?>
-    window.location = '../index.php';
+    window.location = '/index.php';
 </script>
