@@ -3,15 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>Home</title>
-        <link rel="stylesheet" href="/css/index_html.css">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="../css/index_html.css">
+        <link rel="stylesheet" href="../css/main.css">
     </head>
     <body>
         <ul>
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="#news">News</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="/write/write.html">글쓰기</a></li>
+            <li><a href="./write/write.html">글쓰기</a></li>
         </ul>
                   
         <div class="paragraph">
