@@ -33,9 +33,9 @@
             $rows = $result->fetch_all(MYSQLI_NUM);
 
             foreach ($rows as $row) {
-                echo "<h3>$row[0]</h3> <br>";
-                echo "<h2>$row[1]</h2> <br>";
-                echo "<p>$row[2]</p> <br>";
+                echo "<h3>$row[0]</h3>";
+                echo "<h2>$row[1]</h2>";
+                echo "<p>$row[2]</p><br>";
                 echo date("Y년 m월 d일 h:i:sa", $row[3]);
                 echo "<br> Likes: " . "$row[4]<br><br>";
             }
