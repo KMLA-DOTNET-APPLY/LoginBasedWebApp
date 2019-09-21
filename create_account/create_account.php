@@ -11,7 +11,7 @@
     $pw = $_POST['pw'];
 
     //필요한 정보($mysqli)를 db.php에서 가져온다.
-    require('/db/db.php');
+    require('../db/db.php');
 
     //입력된 id값으로 database에서 검색한다.
     $check="SELECT * from user_info WHERE id='$id'";
@@ -21,7 +21,6 @@
     if($result->num_rows==1)
     {
         echo '<script> alert("중복된 아이디입니다"); history.back(); </script>';
-
         exit();
     }
     else //동일한 id값이 존재하니 않는 경우
