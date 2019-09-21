@@ -1,3 +1,7 @@
+<?php
+    require("/login/login_check.php");
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
