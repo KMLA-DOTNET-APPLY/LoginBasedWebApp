@@ -19,7 +19,7 @@
         <ul>
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="">News</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="./logout/logout.php">Logout</a></li>
             <li><a href="./write/write.html">글쓰기</a></li>
         </ul>
                   
