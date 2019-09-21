@@ -24,12 +24,22 @@
         </ul>
                   
         <div class="paragraph">
-            <h2>제목</h2>
-            <h3>글쓴이</h3>
-            <p>글 쓴 시간</p>
-            <p>내용</p>
-            <p>좋아요</p>
-            <p>댓글</p>
+            <?php
+            require('./db/db.php');
+
+            $select = "SELECT * FROM newsfeed_data ORDER BY id DESC";
+            $result = $mysqli->query($select);
+
+            $rows = $result->fetch_all(MYSQLI_NUM);
+
+            foreach ($rows as $row) {
+                echo "<h3>$row[0]</h3> <br>";
+                echo "<h2>$row[1]</h2> <br>";
+                echo "<p>$row[2]</p> <br>";
+                echo date("Y년 m월 d일 h:i:sa", $row[3]);
+                echo "<br> Likes: " . "$row[4]<br><br>";
+            }
+            ?>
         </div>
         
     </body>
