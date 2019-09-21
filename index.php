@@ -1,5 +1,5 @@
 <?php
-    require("/login/login_check.php");
+    require("./login/login_check.php");
 ?>
 
 <!DOCTYPE html>
