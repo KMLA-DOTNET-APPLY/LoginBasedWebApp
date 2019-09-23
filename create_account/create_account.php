@@ -4,7 +4,7 @@ if (empty($_POST['id']) || empty($_POST['user']) || empty($_POST['pw'])) {
     echo '<script> alert("항목을 입력하세요"); history.back(); </script>';
     exit();
 }
-if (!preg_match('/[^A-Za-z0-9]/', $_POST['id']) || !preg_match('/[^A-Za-z0-9]/', $_POST['pw']) || !preg_match('/[^A-Za-z0-9]/', $_POST['user'])) 
+if (!preg_match('/[^A-Za-z0-9]/', strval($_POST['id'])) || !preg_match('/[^A-Za-z0-9]/', strval($_POST['pw'])) || !preg_match('/[^A-Za-z0-9]/', strval($_POST['user']))) 
 {
     echo '<script> alert("영문 또는 숫자만 입력 가능합니다"); history.back(); </script>';
     exit();
