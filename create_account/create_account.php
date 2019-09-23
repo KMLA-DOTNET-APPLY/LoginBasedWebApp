@@ -7,6 +7,7 @@ if (empty($_POST['id']) || empty($_POST['user']) || empty($_POST['pw'])) {
 if (!preg_match('/[^A-Za-z0-9]/', $_POST['id']) || !preg_match('/[^A-Za-z0-9]/', $_POST['pw']) || !preg_match('/[^A-Za-z0-9]/', $_POST['user'])) 
 {
     echo '<script> alert("영문 또는 숫자만 입력 가능합니다"); history.back(); </script>';
+    exit();
 }
 //입력값을 받는다.
 $id = $_POST['id'];
