@@ -1,4 +1,5 @@
 <?php
+    date_default_timezone_set('Asia/Seoul');
     session_start();
 
     if(!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw']))
