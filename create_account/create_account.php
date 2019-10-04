@@ -20,7 +20,7 @@ $result = $mysqli->query($check);
 if ($result->num_rows == 1) {
     echo '<script> alert("중복된 아이디입니다"); history.back(); </script>';
     exit();
-} else //동일한 id값이 존재하니 않는 경우
+} else //동일한 id값이 존재하지 않는 경우
 {
     //데이터베이스에 값을 입력한다.
     $insert = "INSERT INTO user_info (id,user,pw) VALUES ('$id','$user','$pw')";
