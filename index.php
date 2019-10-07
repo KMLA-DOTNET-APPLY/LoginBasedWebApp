@@ -34,9 +34,9 @@
             $rows = $result->fetch_all(MYSQLI_NUM);
 
             foreach ($rows as $row) {
-                echo "<h3>작성자$row[0]</h3>";
-                echo "<h2>제목$row[1]</h2>";
-                echo "<p>내용$row[2]</p><br>";
+                echo "<h3>작성자: $row[0]</h3>";
+                echo "<h2>제목: $row[1]</h2>";
+                echo "<p>내용: $row[2]</p><br>";
                 echo date("Y년 m월 d일 h:i:sa", $row[3]);
                 echo "<br>Likes: " . "$row[4]<br><br>";
                 echo "<input type='button' value='👍'>"; // 댓글을 쓰는 버튼
