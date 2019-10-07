@@ -19,8 +19,8 @@
     <body>
         <ul>
             <li><a class="active" href="#home">Home</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="./logout/logout.php">Logout</a></li>
+            <li><a href="./delete_account/delete_account.html">계정 삭제</a></li>
+            <li><a href="./logout/logout.php">로그아웃</a></li>
             <li><a href="./write/write.html">글쓰기</a></li>
         </ul>
 
