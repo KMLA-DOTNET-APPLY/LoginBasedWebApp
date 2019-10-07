@@ -8,7 +8,7 @@ require('../db/db.php');
 
 session_start();
 
-$author = $_SESSION['user'];
+$author = $_SESSION['id'];
 $title = $_POST['title'];
 $content = $_POST['content'];
 $created_at = time();
