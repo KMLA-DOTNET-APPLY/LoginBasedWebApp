@@ -9,7 +9,7 @@
     $mysqli = new mysqli($server, $username, $password, $db);
  
     echo $server;
-    echo "<br>";
+    echo "<br>"; 
     echo $username;
     echo "<br>";
     echo $password;
