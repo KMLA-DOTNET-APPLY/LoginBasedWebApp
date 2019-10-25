@@ -31,7 +31,7 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw
         $rows = $result->fetch_all(MYSQLI_NUM);
 
         foreach ($rows as $row) {
-            echo "<p>제목: $row[1]</p><p>내용:$row[0]</p><p>$row[2]</p>";
+            echo "<h1>제목: $row[1]</h1><h2>내용:$row[0]</h2><p>$row[2]</p>";
             echo date("Y년 m월 d일 h:i:sa", $row[3]);
             echo "<br><br>";
             // 댓글을 쓰는 버튼
