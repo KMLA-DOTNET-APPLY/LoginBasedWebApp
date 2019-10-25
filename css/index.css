@@ -2,10 +2,10 @@
 
 body {
     margin: 30px;
+    font-family: sans-serif;
 }
 p {
     word-wrap: break-word;
-    margin: 10px;
 }
 
 ul {
