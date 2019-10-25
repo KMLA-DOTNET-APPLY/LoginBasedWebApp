@@ -21,7 +21,7 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw
             <li><a href="./write/write.html">Write Post</a></li>
             <li><a href="./logout/logout.php">Log Out</a></li>
             <li><a href="./delete_account/delete_account.html">Delete Account</a></li>
-            <li><a href="#about" class="last-child">About</a></li>
+            <li class="last-child"><a href="#about">About</a></li>
         </ul>
         <?php
         require './db/db.php';
