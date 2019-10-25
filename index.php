@@ -12,7 +12,7 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw
     <head>
         <meta charset="utf-8">
         <title>Home</title>
-        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="./css/index.css">
     </head>
 
     <body>
