@@ -1,9 +1,11 @@
 @charset "utf-8";
 
 body {
-    margin: 30px;
-    font-family: sans-serif;
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
 }
+
 p {
     word-wrap: break-word;
 }
@@ -39,4 +41,8 @@ li a:hover {
 
 li:last-child {
     border-right: none;
+}
+
+.paragraph {
+    margin:10px;
 }
