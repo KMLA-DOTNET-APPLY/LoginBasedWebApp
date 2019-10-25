@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Change Password</title>
+        <script type="text/javascript">
+        function alr(){
+            if (confirm("비밀번호를 바꾸시겠습니까?")) {
+
+            }
+            else {
+                //홈으로
+                window.location.href = '/index.php';
+            }
+        }
+        </script>
+    </head>
+
+    <body onload="alr();">
+        <h1>비밀번호 변경하기</h1>
+        <p>새로운 비밀번호를 입력해주세요</p>
+        <form method='POST' action="pw_change_next.php">
+            <table>
+                <tr>
+                    <td>새로운 비밀번호</td>
+                    <td><input type='text' name='pw' tabindex='1'/></td>
+                    <td rowspan='2'><input type='submit' tabindex='2' value='변경하기'/></td>
+                </tr>
+        </form>
+    </body>
+</html>

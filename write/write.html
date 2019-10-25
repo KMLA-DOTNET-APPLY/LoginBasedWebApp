@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Write</title>
+        <link rel="stylesheet" href="/css/index.css">
+    </head>
+
+    <body>
+        <ul>
+            <li><a href="/index.php">Home</a></li>
+            <li><a class="active">Write Post</a></li>
+            <li><a href="./logout/logout.php">Log Out</a></li>
+            <li><a href="./delete_account/delete_account.html">Delete Account</a></li>
+        </ul>
+
+        <div class="paragraph">
+            <form method="POST" action="write.php">
+                <input name="title" type="text" placeholder="제목">
+                <br>
+                <input name="content" type="text" placeholder="내용">
+                <br>
+                <input type="submit" value="write">
+            </form>
+        </div>
+
+    </body>
+</html>

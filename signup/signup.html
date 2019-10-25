@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>회원가입</title>
+        <link rel="stylesheet" href="/css/signup.css" type="text/css">
+    </head>
+
+    <body>
+        <form method='POST' class="Signup" id="SignupForm" action='/signup/signup_check.php'>
+            <h1 class="SignupTitle">Signup</h1>
+            <input type="text" class="infoInput" name='user' placeholder="이름" autofocus required>
+            <input type="text" class="infoInput" name='id' placeholder="아이디" autofocus required>
+            <input type="password" class="infoInput" name='pw' placeholder="비밀번호" required>
+            <input type="int" class="infoInput" name='num' placeholder="전화번호 뒷 8자리 ex.12345678" autofocus required>
+            <input type="submit" value="가입하기" class="SignUpButton" onclick="location.href='/login/login.html'">
+            <input type="button" value="홈으로" class="GoHomeButton" onclick="location.href='/login/login.html'">
+		</form>
+    </body>
+</html>
