@@ -1,12 +1,3 @@
-<?php
-date_default_timezone_set('Asia/Seoul');
-session_start();
-
-if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw'])) {
-    header("Location: ./login/login.html");
-    exit();
-}
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,6 +7,15 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw
     </head>
 
     <body>
+        <?php
+        date_default_timezone_set('Asia/Seoul');
+        session_start();
+
+        if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw'])) {
+            header("Location: ./login/login.html");
+            exit();
+        }
+        ?>
         <div class="header">
             <h1>Open-Chatting</h1>
             <p>Talk with everyone in our school</p>
@@ -60,6 +60,23 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw
             ?>*/
         ?>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
-        
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBdiMB9sk-Fj7H_H66GP95E2hjlwWISepE",
+            authDomain: "loginbasedwebapp.firebaseapp.com",
+            databaseURL: "https://loginbasedwebapp.firebaseio.com",
+            projectId: "loginbasedwebapp",
+            storageBucket: "loginbasedwebapp.appspot.com",
+            messagingSenderId: "130207329293",
+            appId: "1:130207329293:web:fff850a73b41c627"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
     </body>
 </html>
