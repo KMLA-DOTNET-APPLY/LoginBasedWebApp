@@ -60,23 +60,6 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw
             ?>*/
         ?>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
-
-        <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
-
-        <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyBdiMB9sk-Fj7H_H66GP95E2hjlwWISepE",
-            authDomain: "loginbasedwebapp.firebaseapp.com",
-            databaseURL: "https://loginbasedwebapp.firebaseio.com",
-            projectId: "loginbasedwebapp",
-            storageBucket: "loginbasedwebapp.appspot.com",
-            messagingSenderId: "130207329293",
-            appId: "1:130207329293:web:fff850a73b41c627"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-    </script>
+        
     </body>
 </html>
