@@ -1,5 +1,5 @@
 <?php
-echo 1;
+/*echo 1;
 date_default_timezone_set('Asia/Seoul');
 echo 2;
 session_start();
@@ -10,7 +10,7 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw
     header("Location: ./login/login.html");
     exit();
 }
-echo 5;
+echo 5;*/
 ?>
 <!DOCTYPE html>
 <html>
