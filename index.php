@@ -8,13 +8,13 @@
 
     <body>
         <?php
-        date_default_timezone_set('Asia/Seoul');
+        /*date_default_timezone_set('Asia/Seoul');
         session_start();
 
         if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw'])) {
             header("Location: ./login/login.html");
             exit();
-        }
+        }*/
         ?>
         <div class="header">
             <h1>Open-Chatting</h1>
@@ -32,7 +32,7 @@
         </div>
 
         <?php
-        require './db/db.php';
+        /*require './db/db.php';
 
         $select = "SELECT * FROM newsfeed_data ORDER BY id DESC";
         $result = $mysqli->query($select);
@@ -59,24 +59,5 @@
             모든 데이터를 가지고 와야 하니까 처음에 다 가지고 와서 파싱한다(개선점이 있을 것 같음)
             ?>*/
         ?>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
-
-        <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
-
-        <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyBdiMB9sk-Fj7H_H66GP95E2hjlwWISepE",
-            authDomain: "loginbasedwebapp.firebaseapp.com",
-            databaseURL: "https://loginbasedwebapp.firebaseio.com",
-            projectId: "loginbasedwebapp",
-            storageBucket: "loginbasedwebapp.appspot.com",
-            messagingSenderId: "130207329293",
-            appId: "1:130207329293:web:fff850a73b41c627"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-    </script>
     </body>
 </html>
