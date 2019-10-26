@@ -1,22 +1,19 @@
 <?php
-echo 1;
 date_default_timezone_set('Asia/Seoul');
-echo 2;
 session_start();
 
-echo 3;
 if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw'])) {
-    echo 4;
     header("Location: ./login/login.html");
     exit();
 }
-echo 5;
 ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="./css/index.css">
     </head>
 
@@ -37,6 +34,7 @@ echo 5;
             </ul>
         </div>
 
+        <div class="w3-row">
         <?php
         require './db/db.php';
 
@@ -45,11 +43,10 @@ echo 5;
         $rows = $result->fetch_all(MYSQLI_NUM);
 
         foreach ($rows as $row) {
-            echo "<div class="paragraph">";
-            echo "<h1>제목: $row[1]</h1><h2>작성자:$row[0]</h2><p>$row[2]</p>";
+            echo "<div class="w3-container">";
+            echo "<h2>$row[1]</h2><h3>작성자:$row[0]</h3><p>$row[2]</p>";
             echo date("Y년 m월 d일 h:i:sa", $row[3]);
-            echo "<br><br>";
-            echo "</div>\n";
+            echo "</div>";
             // 댓글을 쓰는 버튼
         }
             /*newsfeed_data에 포함된 모든 글을 가져온다.
@@ -65,6 +62,8 @@ echo 5;
             모든 데이터를 가지고 와야 하니까 처음에 다 가지고 와서 파싱한다(개선점이 있을 것 같음)
             ?>*/
         ?>
+        </div>
+
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
 
