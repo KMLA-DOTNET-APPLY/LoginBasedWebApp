@@ -1,3 +1,17 @@
+<?php
+echo 1;
+date_default_timezone_set('Asia/Seoul');
+echo 2;
+session_start();
+
+echo 3;
+if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw'])) {
+    echo 4;
+    header("Location: ./login/login.html");
+    exit();
+}
+echo 5;
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,15 +21,7 @@
     </head>
 
     <body>
-        <?php
-        date_default_timezone_set('Asia/Seoul');
-        session_start();
 
-        if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw'])) {
-            header("Location: ./login/login.html");
-            exit();
-        }
-        ?>
         <div class="header">
             <h1>Open-Chatting</h1>
             <p>Talk with everyone in our school</p>
