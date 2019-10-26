@@ -1,5 +1,5 @@
 <?php
-/*echo 1;
+echo 1;
 date_default_timezone_set('Asia/Seoul');
 echo 2;
 session_start();
@@ -10,7 +10,7 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw
     header("Location: ./login/login.html");
     exit();
 }
-echo 5;*/
+echo 5;
 ?>
 <!DOCTYPE html>
 <html>
@@ -66,9 +66,9 @@ echo 5;*/
             ?>*/
         ?>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <!-- <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
 
-        TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries
+        <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries-->
 
         <script>
         // Your web app's Firebase configuration
@@ -83,6 +83,6 @@ echo 5;*/
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
-        </script>-->
+        </script>
     </body>
 </html>
