@@ -1,13 +1,3 @@
-<?php
-echo 1;
-date_default_timezone_set('Asia/Seoul');
-session_start();
-
-if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw'])) {
-    header("Location: ./login/login.html");
-    exit();
-}
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,6 +9,15 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw
     </head>
 
     <body>
+        <?php
+        date_default_timezone_set('Asia/Seoul');
+        session_start();
+
+        if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw'])) {
+            header("Location: ./login/login.html");
+            exit();
+        }
+        ?>
 
         <div class="header">
             <h1>Open-Chatting</h1>
