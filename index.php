@@ -18,8 +18,6 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw
     </head>
 
     <body>
-
-
         <div class="header">
             <h1>Open-Chatting</h1>
             <p>Talk with everyone in our school</p>
@@ -44,7 +42,7 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw
         $rows = $result->fetch_all(MYSQLI_NUM);
 
         foreach ($rows as $row) {
-            echo "<div class="w3-container">";
+            echo "<div class='w3-container'>";
             echo "<h2>$row[1]</h2><h3>작성자:$row[0]</h3><p>$row[2]</p>";
             echo date("Y년 m월 d일 h:i:sa", $row[3]);
             echo "</div>";
@@ -63,26 +61,5 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['user']) || !isset($_SESSION['pw
             모든 데이터를 가지고 와야 하니까 처음에 다 가지고 와서 파싱한다(개선점이 있을 것 같음)
             ?>*/
         ?>
-        </div>
-
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
-
-        <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries-->
-
-        <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyBdiMB9sk-Fj7H_H66GP95E2hjlwWISepE",
-            authDomain: "loginbasedwebapp.firebaseapp.com",
-            databaseURL: "https://loginbasedwebapp.firebaseio.com",
-            projectId: "loginbasedwebapp",
-            storageBucket: "loginbasedwebapp.appspot.com",
-            messagingSenderId: "130207329293",
-            appId: "1:130207329293:web:fff850a73b41c627"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        </script>
     </body>
 </html>
